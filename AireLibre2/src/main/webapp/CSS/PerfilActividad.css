@@ -1,0 +1,265 @@
+.perfil-actividad-page.activity-page {
+  background-image: url('https://images.unsplash.com/photo-1519672808815-bdd52bb3bd41?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.perfil-actividad-page .profile-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.perfil-actividad-page .activity-header {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(52, 152, 219, 0.9);
+  color: #fff;
+  padding: 2rem;
+}
+
+.perfil-actividad-page .profile-image-container {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.perfil-actividad-page .profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.perfil-actividad-page .activity-info {
+  text-align: center;
+}
+
+.perfil-actividad-page #activityName {
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.perfil-actividad-page #activityDescription {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.perfil-actividad-page .activity-info p {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.perfil-actividad-page .activity-classes {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.perfil-actividad-page .activity-classes h2 {
+  margin-top: 0;
+  color: #3498db;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.perfil-actividad-page .activity-classes h3 {
+  margin-top: 0;
+  color: #006400;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  padding-left: 10px;
+}
+
+.perfil-actividad-page .classes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.perfil-actividad-page .classes-table th,
+.perfil-actividad-page .classes-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.perfil-actividad-page .classes-table th {
+  background-color: rgba(242, 242, 242, 0.9);
+  font-weight: bold;
+  color: #333;
+}
+
+.perfil-actividad-page .classes-table tr:nth-child(even) {
+  background-color: rgba(248, 248, 248, 0.9);
+}
+
+.perfil-actividad-page .classes-table tr:hover {
+  background-color: rgba(232, 232, 232, 0.9);
+}
+
+@media (max-width: 768px) {
+  .perfil-actividad-page .profile-image-container {
+    height: 400px;
+  }
+
+  .perfil-actividad-page #activityName {
+    font-size: 2rem;
+  }
+
+  .perfil-actividad-page .activity-classes {
+    padding: 1rem;
+  }
+
+  .perfil-actividad-page .classes-table th,
+  .perfil-actividad-page .classes-table td {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .perfil-actividad-page .profile-container {
+    margin: 1rem;
+  }
+
+  .perfil-actividad-page .activity-header {
+    padding: 1rem;
+  }
+
+  .perfil-actividad-page .profile-image-container {
+    height: 300px;
+  }
+
+  .perfil-actividad-page #activityName {
+    font-size: 1.5rem;
+  }
+
+  .perfil-actividad-page .activity-info p,
+  .perfil-actividad-page #activityDescription {
+    font-size: 1rem;
+  }
+
+  .perfil-actividad-page .classes-table th,
+  .perfil-actividad-page .classes-table td {
+    padding: 0.5rem;
+  }
+}
+
+/* Enhanced Popup Styles */
+.inscription-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.inscription-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+.inscription-content h2 {
+  color: #3498db;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.inscription-content p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.button-group button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+#confirmarInscripcion {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#cancelarInscripcion {
+  background-color: #f44336;
+  color: white;
+}
+
+#confirmarInscripcion:hover,
+#cancelarInscripcion:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+#confirmarInscripcion:active,
+#cancelarInscripcion:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .inscription-content {
+    padding: 20px;
+  }
+
+  .inscription-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .button-group button {
+    padding: 10px 20px;
+  }
+}
